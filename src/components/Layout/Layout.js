@@ -8,6 +8,7 @@ const Layout = () => {
   return (
     <div>
       <Header>
+        <Toaster position="top-right" />
         <ListLayout>
           <li>
             <LinkLayout to="/">Home</LinkLayout>
@@ -28,7 +29,6 @@ const Layout = () => {
           <Outlet />
         </Suspense>
       </main>
-      <Toaster position="top-right" />
     </div>
   );
 };

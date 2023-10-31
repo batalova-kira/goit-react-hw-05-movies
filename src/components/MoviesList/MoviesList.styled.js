@@ -5,9 +5,12 @@ export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+
   gap: 16px;
   padding: 0 40px;
   justify-content: start;
+  background-color: #adb2d3;
+  color: #1a102b;
 `;
 
 export const MovieLink = styled(Link)`
