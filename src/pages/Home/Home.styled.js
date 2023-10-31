@@ -7,6 +7,7 @@ export const Title = styled.h1`
 `;
 
 export const BoxMovieList = styled.div`
+  height: 100vh;
   padding-top: 16px;
   background-color: #adb2d3;
   color: #1a102b;

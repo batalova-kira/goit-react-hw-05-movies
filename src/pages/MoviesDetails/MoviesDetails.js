@@ -106,7 +106,13 @@ const MoviesDetails = () => {
       </ListAdd>
       {isLoading && <Loader />}
       {error && <Error />}
-      <Suspense fallback={<div>Please, wait few time..</div>}>
+      <Suspense
+        fallback={
+          <div>
+            <Loader />
+          </div>
+        }
+      >
         <Outlet />
       </Suspense>
     </Box>
