@@ -10,6 +10,7 @@ import {
   TitleCast,
 } from './Cast.styled';
 import { Error, Loader } from 'components/Loader/Loader';
+import toast from 'react-hot-toast';
 
 const Cast = () => {
   const { movieId } = useParams();
@@ -27,6 +28,9 @@ const Cast = () => {
         setError(false);
         const fetchCast = await getMovieCast(movieId);
         setActors(fetchCast);
+        if (fetchCast.length === 0) {
+          toast.error('Sorry, there is no information about the cast!');
+        }
       } catch (error) {
         setError(true);
       } finally {

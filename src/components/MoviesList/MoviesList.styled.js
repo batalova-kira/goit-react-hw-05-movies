@@ -5,6 +5,7 @@ export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-around;
 
   gap: 16px;
   padding: 0 40px;
